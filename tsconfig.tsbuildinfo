@@ -1,1 +1,1 @@
-{"root":["./src/index.ts","./src/commands/hello/index.ts","./src/commands/hello/world.ts"],"version":"5.9.3"}
+{"root":["./src/index.ts","./src/commands/hello/index.ts","./src/commands/hello/world.ts","./src/commands/semrush/auth.ts","./src/commands/semrush/domain-overview.ts","./src/lib/adapters/semrush-adapter.ts"],"errors":true,"version":"5.9.3"}
