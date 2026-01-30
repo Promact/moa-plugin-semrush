@@ -1,5 +1,5 @@
 
-import { SaasProvider, AuthManager, createHttpClient, HttpClient } from 'moa-cli-core';
+import { SaasProvider, AuthManager, createHttpClient, HttpClient } from '@promactinfo/moa-cli';
 import * as inquirer from '@inquirer/prompts';
 
 export class SemrushAdapter implements SaasProvider {
