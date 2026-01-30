@@ -1,7 +1,7 @@
 {
-  "name": "moa-plugin-semrush",
-  "description": "MoA plugin for SemRush",
-  "version": "0.0.0",
+  "name": "@promactinfo/moa-plugin-semrush",
+  "description": "MoA plugin for Semrush",
+  "version": "0.1.0",
   "author": "Chintan Shah",
   "bin": {
     "semrush": "./bin/run.js"

@@ -1,12 +1,12 @@
-moa-plugin-semrush
+@promactinfo/moa-plugin-semrush
 =================
 
 MoA plugin for SemRush
 
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/moa-plugin-semrush.svg)](https://npmjs.org/package/moa-plugin-semrush)
-[![Downloads/week](https://img.shields.io/npm/dw/moa-plugin-semrush.svg)](https://npmjs.org/package/moa-plugin-semrush)
+[![Version](https://img.shields.io/npm/v/@promactinfo/moa-plugin-semrush.svg)](https://www.npmjs.com/package/@promactinfo/moa-plugin-semrush)
+[![Downloads/week](https://img.shields.io/npm/dw/@promactinfo/moa-plugin-semrush.svg)](https://www.npmjs.com/package/@promactinfo/moa-plugin-semrush)
 
 
 <!-- toc -->
@@ -16,11 +16,11 @@ MoA plugin for SemRush
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g moa-plugin-semrush
+$ npm install -g @promactinfo/moa-plugin-semrush
 $ semrush COMMAND
 running command...
 $ semrush (--version)
-moa-plugin-semrush/0.0.0 win32-x64 node-v22.21.1
+@promactinfo/moa-plugin-semrush/0.1.0 win32-x64 node-v22.21.1
 $ semrush --help [COMMAND]
 USAGE
   $ semrush COMMAND
@@ -29,19 +29,24 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`semrush hello PERSON`](#semrush-hello-person)
-* [`semrush hello world`](#semrush-hello-world)
-* [`semrush help [COMMAND]`](#semrush-help-command)
-* [`semrush plugins`](#semrush-plugins)
-* [`semrush plugins add PLUGIN`](#semrush-plugins-add-plugin)
-* [`semrush plugins:inspect PLUGIN...`](#semrush-pluginsinspect-plugin)
-* [`semrush plugins install PLUGIN`](#semrush-plugins-install-plugin)
-* [`semrush plugins link PATH`](#semrush-plugins-link-path)
-* [`semrush plugins remove [PLUGIN]`](#semrush-plugins-remove-plugin)
-* [`semrush plugins reset`](#semrush-plugins-reset)
-* [`semrush plugins uninstall [PLUGIN]`](#semrush-plugins-uninstall-plugin)
-* [`semrush plugins unlink [PLUGIN]`](#semrush-plugins-unlink-plugin)
-* [`semrush plugins update`](#semrush-plugins-update)
+- [moa-plugin-semrush](#moa-plugin-semrush)
+- [Usage](#usage)
+- [Commands](#commands)
+  - [`semrush hello PERSON`](#semrush-hello-person)
+  - [`semrush hello world`](#semrush-hello-world)
+  - [`semrush help [COMMAND]`](#semrush-help-command)
+  - [`semrush plugins`](#semrush-plugins)
+  - [`semrush plugins add PLUGIN`](#semrush-plugins-add-plugin)
+  - [`semrush plugins:inspect PLUGIN...`](#semrush-pluginsinspect-plugin)
+  - [`semrush plugins install PLUGIN`](#semrush-plugins-install-plugin)
+  - [`semrush plugins link PATH`](#semrush-plugins-link-path)
+  - [`semrush plugins remove [PLUGIN]`](#semrush-plugins-remove-plugin)
+  - [`semrush plugins reset`](#semrush-plugins-reset)
+  - [`semrush plugins uninstall [PLUGIN]`](#semrush-plugins-uninstall-plugin)
+  - [`semrush plugins unlink [PLUGIN]`](#semrush-plugins-unlink-plugin)
+  - [`semrush plugins update`](#semrush-plugins-update)
+  - [`semrush semrush auth`](#semrush-semrush-auth)
+  - [`semrush semrush domain-overview DOMAIN`](#semrush-semrush-domain-overview-domain)
 
 ## `semrush hello PERSON`
 
@@ -65,7 +70,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [src/commands/hello/index.ts](https://github.com/Promact/moa-plugin-semrush/blob/v0.0.0/src/commands/hello/index.ts)_
+_See code: [src/commands/hello/index.ts](https://github.com/Promact/moa-plugin-semrush/blob/v0.1.0/src/commands/hello/index.ts)_
 
 ## `semrush hello world`
 
@@ -83,7 +88,7 @@ EXAMPLES
   hello world! (./src/commands/hello/world.ts)
 ```
 
-_See code: [src/commands/hello/world.ts](https://github.com/Promact/moa-plugin-semrush/blob/v0.0.0/src/commands/hello/world.ts)_
+_See code: [src/commands/hello/world.ts](https://github.com/Promact/moa-plugin-semrush/blob/v0.1.0/src/commands/hello/world.ts)_
 
 ## `semrush help [COMMAND]`
 
@@ -394,4 +399,44 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.55/src/commands/plugins/update.ts)_
+
+## `semrush semrush auth`
+
+Authenticate with Semrush
+
+```
+USAGE
+  $ semrush semrush auth
+
+DESCRIPTION
+  Authenticate with Semrush
+
+EXAMPLES
+  $ semrush semrush auth
+```
+
+_See code: [src/commands/semrush/auth.ts](https://github.com/Promact/moa-plugin-semrush/blob/v0.1.0/src/commands/semrush/auth.ts)_
+
+## `semrush semrush domain-overview DOMAIN`
+
+Get Domain Overview from Semrush
+
+```
+USAGE
+  $ semrush semrush domain-overview DOMAIN [-d <value>]
+
+ARGUMENTS
+  DOMAIN  Domain name to analyze
+
+FLAGS
+  -d, --database=<value>  [default: us] Semrush Database (us, uk, fr, etc.)
+
+DESCRIPTION
+  Get Domain Overview from Semrush
+
+EXAMPLES
+  $ semrush semrush domain-overview example.com --database=us
+```
+
+_See code: [src/commands/semrush/domain-overview.ts](https://github.com/Promact/moa-plugin-semrush/blob/v0.1.0/src/commands/semrush/domain-overview.ts)_
 <!-- commandsstop -->
