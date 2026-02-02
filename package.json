@@ -11,7 +11,7 @@
     "@oclif/core": "^4",
     "@oclif/plugin-help": "^6",
     "@oclif/plugin-plugins": "^5",
-    "@promactinfo/moa-cli": "file:../moa-cli-core",
+    "@promactinfo/moa-cli": "^0.1.0",
     "@inquirer/prompts": "^8.2.0"
   },
   "devDependencies": {
